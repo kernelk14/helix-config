@@ -1,0 +1,47 @@
+theme = "gruber-darker"
+# theme = "kanabox_default"
+# theme = "gruvbox_material_dark_hard"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-completion = true
+undercurl = true
+bufferline = "multiple"
+auto-pairs = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "separator", "file-name", "separator"]
+center = []
+right = ["separator", "file-type", "version-control", "diagnostics", "selections", "position", "file-encoding", "file-line-ending"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+snippets = true
+display-inlay-hints = true
+
+# Keymappings
+[keys.normal]
+"{" = ":buffer-previous"
+"}" = ":buffer-next"
+"H" = ":hsplit"
+"V" = ":vsplit"
+
+
+[keys.insert]
+"A-{" = ":buffer-previous"
+"A-}" = ":buffer-next"
+"C-z" = ":hsplit"
+"C-V" = ":vsplit"
